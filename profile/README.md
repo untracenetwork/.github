@@ -5,7 +5,7 @@
 ---
 
 <p align="center">
-  <strong>Join <a href="https://t.me/untrace_network">#untrace.builders</a></strong> are the open source crew making sensitive data harder to steal, easier to prove, and safer to use.
+  <strong>Join <a href="https://x.com/untracenetwork">#untrace.builders</a></strong> are the open source crew making sensitive data harder to steal, easier to prove, and safer to use.
 </p>
 
 ---
@@ -68,5 +68,5 @@ Read the contributor guide: [CONTRIBUTING.md](../CONTRIBUTING.md)
 
 <p align="center">
   <strong>Make the breach meaningless.</strong><br />
-  <strong>Join <a href="https://t.me/untrace_network">#untrace.builders</a></strong>
+  <strong>Join <a href="https://x.com/untracenetwork">#untrace.builders</a></strong>
 </p>
