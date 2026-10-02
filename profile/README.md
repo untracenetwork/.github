@@ -66,6 +66,8 @@ Bring a demo, a question, a benchmark, a critique, or a weirdly specific integra
 
 Read the contributor guide: [CONTRIBUTING.md](../CONTRIBUTING.md)
 
+Related: [untrace-cli](https://github.com/untracenetwork/untrace-cli), the Untrace CLI and Desktop app (macOS, Windows, Linux).
+
 <p align="center">
   <strong>Make the breach meaningless.</strong><br />
   <strong>Join <a href="https://x.com/untracenetwork">#untrace.builders</a></strong>
