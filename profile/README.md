@@ -16,6 +16,57 @@ Every data breach in history shared one architectural characteristic: the data e
 
 This model has failed systematically. The asymmetry is structural: attackers only need one path into the target, while defenders must secure every path forever.
 
+## How Untrace is built
+
+Untrace has two kinds of software. The apps are closed. Everything a developer builds on is open.
+
+```mermaid
+flowchart LR
+  subgraph APPS["Untrace apps (closed source)"]
+    DRIVE["Untrace Drive · web"]
+    DESK["Untrace Desktop"]
+    MOB["Untrace Mobile"]
+  end
+  API["Untrace API (hosted)"]
+  subgraph OPEN["Open source (Apache-2.0)"]
+    REF["untrace-api · reference"]
+    SDK["untrace-sdk · JS, React, Next, Vue"]
+    MCP["untrace-mcp · for AI agents"]
+    CLI["untrace-cli · command line"]
+  end
+  APPS --> API
+  SDK --> API
+  MCP --> SDK
+  CLI --> API
+  REF -.documents.-> API
+```
+
+| Repo | What it is | Status |
+|---|---|---|
+| [untrace-desktop](https://github.com/untracenetwork/untrace-desktop) | Download page for the desktop app (macOS, Windows, Linux), signed builds | Live |
+| [untrace-mobile](https://github.com/untracenetwork/untrace-mobile) | Mobile app | In progress |
+| untrace-api | API reference | Coming |
+| untrace-sdk | Client libraries for the API | Coming |
+| untrace-mcp | MCP server, so AI agents can use your files with your permission | Coming |
+| untrace-cli | Command-line client for the API | Coming |
+
+### Signing in
+
+- **Developers and companies** connect with a client ID and client secret, server to server. You own your tenant and your users.
+- **People using our apps** sign in with a passkey.
+
+### Access to files and folders
+
+- A folder or file can hold several keys: a person's passkey, an app's client credential, a device key.
+- A key can open a whole folder, one subfolder or a single file.
+- To share, the other person adds **their own** key under **their own** username. Nobody hands a key over.
+- Untrace stores files across 6 independent regions; any 3 recover a file.
+
+### Enterprise
+
+Self-hosted and private-cloud installs are delivered by Untrace directly, never from these public repos. Contact contact@untrace.network.
+
+
 ## What We Are Building
 
 | Layer            | Builder Playground                                                                    |
